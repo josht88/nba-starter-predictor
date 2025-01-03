@@ -1,0 +1,50 @@
+Logistic Regression Accuracy: 0.7448275862068966
+              precision    recall  f1-score   support
+
+           0       0.78      0.87      0.82        97
+           1       0.65      0.50      0.56        48
+
+    accuracy                           0.74       145
+   macro avg       0.71      0.68      0.69       145
+weighted avg       0.74      0.74      0.74       145
+
+Feature Weights:
+  Feature    Weight
+1     3P%  1.292073
+7     BLK  0.390568
+4     TRB  0.283126
+6     STL  0.260942
+3     PTS  0.138688
+2      MP  0.033411
+5     AST  0.031088
+0     FG% -0.350241
+Cluster 0 Mean Values:
+ FG%    0.397273
+3P%    0.197625
+MP     8.908529
+PTS    2.768230
+TRB    1.540085
+AST    0.598294
+STL    0.277399
+BLK    0.192537
+dtype: float64
+Cluster 1 Mean Values:
+ FG%     0.434457
+3P%     0.283617
+MP     22.508594
+PTS     8.440625
+TRB     3.650391
+AST     1.977344
+STL     0.743750
+BLK     0.412500
+
+
+Feature	Weight	Meaning
+3P%	1.292073	Strongest positive impact—better 3-point shooting percentage increases starter likelihood.
+BLK	0.390568	Blocking ability has a moderate positive impact—defensive presence matters.
+TRB	0.283126	Rebounds contribute positively—better rebounding helps secure a starter role.
+STL	0.260942	Steals moderately correlate—good defensive skills boost starter chances.
+PTS	0.138688	Scoring slightly matters, but not as heavily as other stats.
+MP	0.033411	Minutes played show very little impact—likely because rookies play limited minutes.
+AST	0.031088	Assists have minimal impact—passing ability may not define starter roles.
+FG%	-0.350241	Negative correlation—high FG% may reflect limited attempts rather than consistent output.
